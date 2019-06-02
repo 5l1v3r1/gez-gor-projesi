@@ -4,7 +4,7 @@
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
       <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      <%= f.text_field :login, autofocus: true, autocomplete: "email" %>
     </div>
 
     <div class="field">
@@ -26,6 +26,8 @@
     </div>
   <% end %>
 </form><br>
-<%= render "devise/shared/links" %>
+<%= render "devise/shared/links" %><br>
+
+<%= link_to "Geri", root_path , class:"ui purple button" %>
 
 </form>
