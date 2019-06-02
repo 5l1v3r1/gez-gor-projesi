@@ -5,8 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :authentication_keys => [:login]
 
   validates :username, :uniqueness => { :case_sensitive => false }
-  attr_accessor :login  
-  
+  attr_accessor :login
+
   def login=(login)
     @login = login
   end
