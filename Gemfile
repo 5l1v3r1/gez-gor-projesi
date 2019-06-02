@@ -20,6 +20,8 @@ gem 'rails', '~> 5.2.0'
 gem 'rails-i18n', '~> 5.1'
 gem 'redis', '~> 4.0'
 
+gem 'semantic-ui-sass'
+
 group :development, :test do
   gem 'brakeman', '~> 4.3'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
