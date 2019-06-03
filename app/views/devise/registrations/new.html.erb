@@ -4,13 +4,13 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    
+
     <div class="two fields">
       <div class="field">
       <label>Username</label>
         <%= f.text_field :username, autofocus: true, autocomplete: "username",placeholder: true %>
       </div>
-    
+
       <div class="field">
       <label>Email</label>
        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: true %>
@@ -32,13 +32,10 @@
     </div>
   </div><br>
   <div class="actions" style="text-align: center;">
-    <%= f.submit "Sign up",class:"ui inverted violet button" %>
+    <%= f.submit "Sign up", class:"ui inverted violet button" %>
   </div><br>
   <div style="text-align:center;">
 <%= render "devise/shared/links" %>
-<%= link_to "Geri", root_path , class:"ui purple button" %>
+<%= link_to "Geri", root_path, class:"ui purple button" %>
 </div>
 <% end %>
-
-
-

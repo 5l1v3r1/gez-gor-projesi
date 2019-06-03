@@ -1,0 +1,8 @@
+<h1>Gezdiğin Şehirler</h1>
+<p>Gezdiğin şehirler alt tarafta listeleniyor, buralar yeşillenecek daha</p>
+
+<%- @map.each do |m| %>
+  <%= m.city.name %> <br>
+<%- end %>
+<br><br>
+<%= link_to "Yeni şehir Ekle", new_map_path, class: 'btn btn-primary' %>
