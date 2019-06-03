@@ -11,5 +11,9 @@
 
   <body>
     <%= yield %>
+    <hr>
+    <% if user_signed_in? %>
+      <%= link_to 'Çıkış Yap', destroy_user_session_path, method: :delete, class:"ui purple button" %>
+    <% end %>
   </body>
 </html>

@@ -3,5 +3,5 @@
 <%= form_for @map do |f| %>
   <%= f.collection_select :city_id, City.all, :id, :name, {}, { class: "ui dropdown" }  %>
   <br><br>
-  <%= f.submit 'Şehri Ekle', class: 'ui inverted violet button' %>
+  <%= f.submit 'Şehri Ekle', class: 'ui purple button' %>
 <% end %>

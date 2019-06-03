@@ -182,8 +182,8 @@
           <%= link_to "Giriş Yap", new_user_session_path, class: "ui inverted button" %>
           <%= link_to "Kayıt Ol", new_user_registration_path, class: "ui inverted button" %>
           <% if user_signed_in? %>
-          <%= link_to 'Çıkış Yap',destroy_user_session_path, method: :delete, data: {confirm: "Are You Sure?"}, class:"ui inverted button" %>
-        <% end %>
+            <%= link_to 'Çıkış Yap',destroy_user_session_path, method: :delete, data: {confirm: "Are You Sure?"}, class:"ui inverted button" %>
+          <% end %>
 
         </div>
       </div>
