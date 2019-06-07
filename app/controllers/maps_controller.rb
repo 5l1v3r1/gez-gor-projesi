@@ -22,6 +22,9 @@ class MapsController < ApplicationController
 
   def index
     @map = current_user.map
+    @map = @map.map do |x|
+      I18n.transliterate( x.city.name.downcase.unicode_normalize )
+    end
   end
 
   def show
