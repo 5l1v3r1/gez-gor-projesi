@@ -11,7 +11,7 @@
 
   <body>
     <div class="ui inverted purple menu huge">
-      <a class="active item">Anasayfa</a>
+      <%= link_to "Anasayfa", root_path, class:"active item" %>
       <% if user_signed_in? %>
         <a class="item">Akış</a>
         <div class="right menu">
