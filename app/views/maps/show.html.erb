@@ -1,8 +1,8 @@
 <h1><%= City.find(params[:city_id]).name %></h1>
 <%= "Girdi bulunamadi" if @map.empty? %>
-<%- @map.each do |e|  %>
+<% @map.each do |e|  %>
   <div class="ui link cards">
-    <%- e.images.each do |image| %>
+    <% e.images.each do |image| %>
       <div class="ui card" >
         <div class="content">
           <div class="right floated meta"></div>
