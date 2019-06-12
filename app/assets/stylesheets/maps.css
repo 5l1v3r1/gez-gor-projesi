@@ -31,11 +31,14 @@
   cursor: pointer;
 }
 .gezildi {
-  fill: red !important;
+  fill: purple !important;
 }
 #svg-turkiye-haritasi path:hover {
   fill: #1094F6;
 }
 #guney-kibris {
   pointer-events: none;
+}
+.menu {
+  border-radius: 0px !important;
 }
