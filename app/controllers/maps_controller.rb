@@ -7,7 +7,7 @@ class MapsController < ApplicationController
     @map = Map.new
     @map.city_id = params[:map][:city_id]
     @map.user_id = current_user.id
-
+    @map.images.attach(params[:map][:images])
     if @map.save!
       flash[:succes] = 'Şehir Eklendi Bro.'
       redirect_to maps_path
@@ -18,6 +18,7 @@ class MapsController < ApplicationController
   end
 
   def edit
+
   end
 
   def index
@@ -28,5 +29,7 @@ class MapsController < ApplicationController
   end
 
   def show
+    @map = Map.where(user_id: current_user.id, city_id: params[:city_id])
+
   end
 end

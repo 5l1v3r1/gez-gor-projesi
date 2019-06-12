@@ -46,10 +46,7 @@ function svgturkiyeharitasi() {
         }
 
         window.location.href = (
-          '#'
-          + id
-          + '-'
-          + parent.getAttribute('data-plakakodu')
+          "/maps/"+parent.getAttribute('data-plakakodu')
         );
       }
     }
