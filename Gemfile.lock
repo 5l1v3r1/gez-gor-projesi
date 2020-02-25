@@ -51,7 +51,6 @@ GEM
       activerecord (>= 3.2, < 7.0)
       rake (>= 10.4, < 13.0)
     arel (9.0.0)
-    asciify (0.1.0)
     ast (2.4.0)
     awesome_print (1.8.0)
     bcrypt (3.1.13)
@@ -143,7 +142,7 @@ GEM
     minitest (5.11.3)
     msgpack (1.2.10)
     nio4r (2.3.1)
-    nokogiri (1.10.3)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
     parallel (1.17.0)
@@ -289,7 +288,6 @@ PLATFORMS
 DEPENDENCIES
   acts_as_paranoid (~> 0.6.0)
   annotate (~> 2.7, >= 2.7.3)
-  asciify
   awesome_print (~> 1.8)
   better_errors (~> 2.4)
   binding_of_caller (~> 0.8.0)
