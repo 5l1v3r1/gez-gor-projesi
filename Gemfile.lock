@@ -51,7 +51,6 @@ GEM
       activerecord (>= 3.2, < 7.0)
       rake (>= 10.4, < 13.0)
     arel (9.0.0)
-    asciify (0.1.0)
     ast (2.4.0)
     awesome_print (1.8.0)
     bcrypt (3.1.13)
@@ -157,7 +156,7 @@ GEM
     pry-rails (0.3.9)
       pry (>= 0.10.4)
     public_suffix (3.1.0)
-    puma (3.12.1)
+    puma (3.12.4)
     rack (2.0.7)
     rack-contrib (2.1.0)
       rack (~> 2.0)
@@ -289,7 +288,6 @@ PLATFORMS
 DEPENDENCIES
   acts_as_paranoid (~> 0.6.0)
   annotate (~> 2.7, >= 2.7.3)
-  asciify
   awesome_print (~> 1.8)
   better_errors (~> 2.4)
   binding_of_caller (~> 0.8.0)
@@ -311,7 +309,7 @@ DEPENDENCIES
   mini_magick (~> 4.8)
   pg (>= 0.18, < 2.0)
   pry-rails (~> 0.3.6)
-  puma (~> 3.11)
+  puma (~> 3.12)
   rack-cors
   rails (~> 5.2.0)
   rails-i18n (~> 5.1)
